@@ -1,0 +1,111 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Apply global font */
+html, body, [class*="css"]  {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Base App Background Gradient */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    background-attachment: fixed;
+}
+
+/* Hide default header, footer, and deploy button */
+header {
+    visibility: hidden;
+}
+footer {
+    visibility: hidden;
+}
+#MainMenu {
+    visibility: hidden;
+}
+
+/* Warning Banner Styling (Make it look like a sleek badge) */
+div[data-testid="stAlert"] {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #f8fafc;
+}
+
+/* Welcome Title styling */
+h1 {
+    font-weight: 700 !important;
+    background: -webkit-linear-gradient(45deg, #60a5fa, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.5rem;
+}
+
+/* Buttons (Example queries) - Glassmorphism & Hover effects */
+div[data-testid="stButton"] > button {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+    color: #93c5fd;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    height: auto;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+div[data-testid="stButton"] > button:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    color: #ffffff;
+}
+
+/* Chat Input styling */
+div[data-testid="stChatInput"] {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Chat Bubbles (User & Assistant) */
+div[data-testid="stChatMessage"] {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Differentiate user chat bubble slightly */
+div[data-testid="stChatMessage"][data-baseweb="block"]:nth-child(even) {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Avatar styling */
+div[data-testid="stChatMessageAvatar"] {
+    background-color: transparent !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

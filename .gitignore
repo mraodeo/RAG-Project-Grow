@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables (contains API keys)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ChromaDB persistent storage
+vectorstore/chroma_db/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# Data (optional - uncomment if raw data should not be tracked)
+# data/raw/

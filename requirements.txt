@@ -1,0 +1,26 @@
+# Core
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-groq>=0.1.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# Data Collection
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+playwright>=1.40.0
+
+# PDF (if needed later)
+pymupdf>=1.24.0
+
+# Backend API
+fastapi>=0.110.0
+uvicorn>=0.29.0
+pydantic>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+tiktoken>=0.7.0
+
+# Testing
+pytest>=8.0.0
