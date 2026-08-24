@@ -72,8 +72,12 @@ def main():
     print("Initializing embedding model (sentence-transformers/all-MiniLM-L6-v2)...")
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
-    persist_dir = os.path.join(".", "vectorstore", "chroma_db")
-    collection_name = "mutual_fund_faq"
+    import sys
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from src import config
+    
+    persist_dir = config.CHROMA_PERSIST_DIR
+    collection_name = config.CHROMA_COLLECTION_NAME
     
     print(f"Indexing chunks into ChromaDB at {persist_dir}...")
     vectorstore = Chroma.from_documents(
