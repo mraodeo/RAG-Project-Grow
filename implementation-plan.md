@@ -870,12 +870,13 @@ Migrate away from the monolithic Streamlit application to a modern decoupled arc
 
 ---
 
-## Phase 7: Integration Testing & Polish
+## Phase 7: Integration Testing, Polish & Automation
 
 ### 7.1 Objectives
 - Write comprehensive README
 - Document known limitations
 - Prepare for handoff / demo
+- Automate daily data ingestion using GitHub Actions
 
 ### 7.2 README.md Structure
 
@@ -923,7 +924,21 @@ Migrate away from the monolithic Streamlit application to a modern decoupled arc
 [Link to Architecture.md]
 ```
 
-### 7.3 Final Deliverables Checklist
+### 7.3 Automated Daily Data Ingestion (GitHub Actions)
+To ensure the RAG system always has the most up-to-date mutual fund data, we will implement a daily scheduled job.
+
+- **[NEW]** `.github/workflows/daily_ingestion.yml`: Create a GitHub Action workflow triggered by a `schedule` (cron) event to run daily.
+- **Workflow Steps**:
+  1. Checkout the repository.
+  2. Setup Python environment and install dependencies (`pip install -r requirements.txt`).
+  3. Install Playwright dependencies (`playwright install chromium`).
+  4. Run the data ingestion pipeline sequentially:
+     - `python scripts/scrape.py`
+     - `python scripts/clean.py`
+     - `python scripts/chunk_and_embed.py`
+  5. Commit and push the updated `data/` folder and `vectorstore/chroma_db/` back to the repository to trigger a new deployment with the latest vector data.
+
+### 7.4 Final Deliverables Checklist
 
 | # | Deliverable | Status |
 |---|---|---|
@@ -937,12 +952,14 @@ Migrate away from the monolithic Streamlit application to a modern decoupled arc
 | 8 | Test suite (`tests/`) | Phase 6 |
 | 9 | Populated vector store (`vectorstore/`) | Phase 2 |
 | 10 | `.env.example` + `requirements.txt` | Phase 0 |
+| 11 | Daily Ingestion Workflow (`.github/workflows/`) | Phase 7 |
 
-### 7.4 Exit Criteria
+### 7.5 Exit Criteria
 - [ ] README.md is complete and accurate
 - [ ] All code is committed and clean
 - [ ] `streamlit run ui/app.py` launches a fully working demo
 - [ ] Demo can answer factual queries, refuse advisory queries, and block PII
+- [ ] GitHub Action scheduler is configured and successfully runs the data pipeline automatically
 
 ---
 
