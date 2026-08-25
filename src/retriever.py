@@ -2,15 +2,24 @@ import os
 import re
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
+import shutil
 from src import config
 
-# Initialize embeddings and vectorstore once when module loads
+# Handle Vercel read-only filesystem for SQLite
+persist_dir = config.CHROMA_PERSIST_DIR
+if os.environ.get("VERCEL") == "1":
+    print("[Retriever] Running on Vercel. Copying vectorstore to /tmp to avoid read-only errors.")
+    tmp_dir = "/tmp/chroma_db"
+    if not os.path.exists(tmp_dir):
+        shutil.copytree(persist_dir, tmp_dir)
+    persist_dir = tmp_dir
+
 print(f"[Retriever] Initializing embedding model: {config.EMBEDDING_MODEL}")
 embeddings = HuggingFaceEmbeddings(model_name=config.EMBEDDING_MODEL)
 
-print(f"[Retriever] Connecting to ChromaDB at {config.CHROMA_PERSIST_DIR}")
+print(f"[Retriever] Connecting to ChromaDB at {persist_dir}")
 vectorstore = Chroma(
-    persist_directory=config.CHROMA_PERSIST_DIR,
+    persist_directory=persist_dir,
     embedding_function=embeddings,
     collection_name=config.CHROMA_COLLECTION_NAME
 )

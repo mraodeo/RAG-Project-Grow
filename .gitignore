@@ -15,7 +15,7 @@ build/
 *.egg
 
 # ChromaDB persistent storage
-vectorstore/chroma_db/
+# vectorstore/chroma_db/
 
 # IDE
 .vscode/
