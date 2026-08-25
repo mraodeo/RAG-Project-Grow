@@ -19,9 +19,10 @@ A facts-only FAQ assistant for HDFC mutual fund schemes, built using Retrieval-A
 | **Guardrail LLM** | Groq (`llama-3.1-8b-instant`) |
 | **Embeddings** | HuggingFace `all-MiniLM-L6-v2` (local) |
 | **Vector Store** | ChromaDB |
-| **Frontend** | Streamlit |
+| **Frontend** | Next.js (React) on Vercel |
+| **Backend** | FastAPI (Python) on Railway |
 | **Framework** | LangChain |
-| **Language** | Python 3.10+ |
+| **Language** | Python 3.10+ / TypeScript |
 
 ## Supported Schemes
 
@@ -80,20 +81,30 @@ python scripts/clean.py
 python scripts/chunk_and_embed.py
 ```
 
-### 8. Launch the App
+### 8. Launch the Backend (FastAPI)
 ```bash
-streamlit run ui/app.py
+uvicorn api.main:app --reload
 ```
+
+### 9. Launch the Frontend (Next.js)
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The application will be available at `http://localhost:3000`.
 
 ## Project Structure
 ```
 RAG-Project/
+├── .github/workflows/      # GitHub Actions for daily data ingestion
+├── api/                    # FastAPI backend endpoints
 ├── docs/                   # Documentation
 ├── data/                   # Raw and processed data
 ├── scripts/                # Data pipeline scripts
 ├── src/                    # Core application code
 ├── vectorstore/            # ChromaDB persistent storage
-├── ui/                     # Streamlit frontend
+├── frontend/               # Next.js React frontend
 ├── tests/                  # Test suite
 ├── eval/                   # Evaluation datasets & results
 ├── .env.example            # Environment variable template
@@ -105,7 +116,7 @@ RAG-Project/
 See [docs/Architecture.md](docs/Architecture.md) for the detailed system design.
 
 ## Known Limitations
-- Static corpus — requires manual re-ingestion for updates
+- Data corpus is automatically updated daily via GitHub Actions, but real-time intraday data is not available.
 - HDFC schemes only — not multi-AMC
 - No multi-turn conversation — each query is independent
 - Depends on Groq API availability

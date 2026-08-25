@@ -945,21 +945,21 @@ To ensure the RAG system always has the most up-to-date mutual fund data, we wil
 | 1 | `problemStatement.md` | ✅ Done |
 | 2 | `Architecture.md` | ✅ Done |
 | 3 | `implementation-plan.md` | ✅ This document |
-| 4 | `README.md` | Phase 7 |
+| 4 | `README.md` | ✅ Done |
 | 5 | Data ingestion scripts (`scripts/`) | Phase 1–2 |
 | 6 | Core RAG modules (`src/`) | Phase 3–4 |
 | 7 | Streamlit UI (`ui/app.py`) | Phase 5 |
 | 8 | Test suite (`tests/`) | Phase 6 |
 | 9 | Populated vector store (`vectorstore/`) | Phase 2 |
-| 10 | `.env.example` + `requirements.txt` | Phase 0 |
-| 11 | Daily Ingestion Workflow (`.github/workflows/`) | Phase 7 |
+| 10 | `.env.example` + `requirements.txt` | ✅ Done |
+| 11 | Daily Ingestion Workflow (`.github/workflows/`) | ✅ Done |
 
 ### 7.5 Exit Criteria
-- [ ] README.md is complete and accurate
-- [ ] All code is committed and clean
-- [ ] `streamlit run ui/app.py` launches a fully working demo
-- [ ] Demo can answer factual queries, refuse advisory queries, and block PII
-- [ ] GitHub Action scheduler is configured and successfully runs the data pipeline automatically
+- [x] README.md is complete and accurate
+- [x] All code is committed and clean
+- [x] Next.js and FastAPI apps launch a fully working demo
+- [x] Demo can answer factual queries, refuse advisory queries, and block PII
+- [x] GitHub Action scheduler is configured and successfully runs the data pipeline automatically
 
 ---
 
