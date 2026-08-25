@@ -79,6 +79,11 @@ def main():
     persist_dir = config.CHROMA_PERSIST_DIR
     collection_name = config.CHROMA_COLLECTION_NAME
     
+    if os.path.exists(persist_dir):
+        import shutil
+        shutil.rmtree(persist_dir)
+        print(f"Cleared existing ChromaDB at {persist_dir}")
+    
     print(f"Indexing chunks into ChromaDB at {persist_dir}...")
     vectorstore = Chroma.from_documents(
         documents=chunked_docs,
