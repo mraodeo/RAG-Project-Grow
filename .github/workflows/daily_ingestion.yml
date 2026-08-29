@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Pull latest changes
         run: git pull --rebase origin main
@@ -55,4 +57,4 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: daily data ingestion update"
           # Pull any commits that arrived during script execution, then push
           git pull --rebase origin main
-          git push
+          git push origin HEAD:main
