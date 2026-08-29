@@ -17,6 +17,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Pull latest changes
+        run: git pull --rebase origin main
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -36,7 +39,7 @@ jobs:
         run: python scripts/clean.py
 
       - name: Run Chunking & Embedding Script
-        # We need the GROQ_API_KEY if chunk_and_embed uses any Groq models, 
+        # We need the GROQ_API_KEY if chunk_and_embed uses any Groq models,
         # or just general env vars if needed. It mostly uses HuggingFace local models.
         # But just in case, we pass secrets if they are required.
         run: python scripts/chunk_and_embed.py
@@ -47,8 +50,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Pull latest remote changes FIRST before staging to avoid push conflicts
-          git pull --rebase origin main
           git add data/ vectorstore/
           # Only commit if there are changes to avoid workflow failure
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: daily data ingestion update" && git push)
