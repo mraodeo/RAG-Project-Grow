@@ -47,6 +47,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Pull latest remote changes FIRST before staging to avoid push conflicts
+          git pull --rebase origin main
           git add data/ vectorstore/
           # Only commit if there are changes to avoid workflow failure
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: daily data ingestion update" && git pull --rebase origin main && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: daily data ingestion update" && git push)
