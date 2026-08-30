@@ -77,17 +77,17 @@ export default function ChatApp() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-slate-100 font-sans">
+    <div className="flex flex-col h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-red-950 text-slate-100 font-sans">
       
       {/* Header */}
       <header className="sticky top-0 z-10 p-4 border-b border-slate-800/50 bg-slate-900/40 backdrop-blur-md">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-indigo-500/20 rounded-xl border border-indigo-500/30">
-              <Building className="w-6 h-6 text-indigo-400" />
+            <div className="p-2 bg-red-500/20 rounded-xl border border-red-500/30">
+              <Building className="w-6 h-6 text-red-400" />
             </div>
-            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">
-              Mutual Fund FAQ Assistant
+            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-rose-400">
+              HDFC Funds FAQ Assistance
             </h1>
           </div>
           
@@ -106,8 +106,8 @@ export default function ChatApp() {
           
           {messages.length === 0 ? (
             <div className="flex flex-col items-center justify-center min-h-[60vh] text-center animate-in fade-in duration-700 zoom-in-95">
-              <div className="w-20 h-20 bg-indigo-500/10 rounded-full flex items-center justify-center mb-6 border border-indigo-500/20 shadow-xl shadow-indigo-500/10">
-                <MessageSquare className="w-10 h-10 text-indigo-400" />
+              <div className="w-20 h-20 bg-red-500/10 rounded-full flex items-center justify-center mb-6 border border-red-500/20 shadow-xl shadow-red-500/10">
+                <MessageSquare className="w-10 h-10 text-red-400" />
               </div>
               <h2 className="text-3xl font-bold text-slate-200 mb-4">How can I help you today?</h2>
               <p className="text-slate-400 max-w-md mb-10 leading-relaxed">
@@ -119,9 +119,9 @@ export default function ChatApp() {
                   <button
                     key={idx}
                     onClick={() => sendMessage(example)}
-                    className="group flex flex-col items-start text-left p-4 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:bg-slate-800/60 hover:border-indigo-500/50 transition-all duration-300 backdrop-blur-sm"
+                    className="group flex flex-col items-start text-left p-4 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:bg-slate-800/60 hover:border-red-500/50 transition-all duration-300 backdrop-blur-sm"
                   >
-                    <Info className="w-5 h-5 text-indigo-400 mb-3 group-hover:scale-110 transition-transform" />
+                    <Info className="w-5 h-5 text-red-400 mb-3 group-hover:scale-110 transition-transform" />
                     <span className="text-sm text-slate-300 leading-snug font-medium">{example}</span>
                   </button>
                 ))}
@@ -139,7 +139,7 @@ export default function ChatApp() {
                   <div
                     className={`max-w-[85%] md:max-w-[75%] rounded-3xl p-5 ${
                       msg.role === "user"
-                        ? "bg-indigo-600/90 text-white shadow-lg shadow-indigo-900/20 rounded-tr-sm"
+                        ? "bg-red-600/90 text-white shadow-lg shadow-red-900/20 rounded-tr-sm"
                         : "bg-slate-800/60 border border-slate-700/50 text-slate-200 backdrop-blur-md rounded-tl-sm prose prose-invert prose-p:leading-relaxed prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-700"
                     }`}
                   >
@@ -155,7 +155,7 @@ export default function ChatApp() {
               {isLoading && (
                 <div className="flex justify-start">
                   <div className="bg-slate-800/60 border border-slate-700/50 backdrop-blur-md rounded-3xl rounded-tl-sm p-5 flex items-center gap-3">
-                    <Loader2 className="w-5 h-5 text-indigo-400 animate-spin" />
+                    <Loader2 className="w-5 h-5 text-red-400 animate-spin" />
                     <span className="text-sm font-medium text-slate-400 animate-pulse">Searching knowledge base...</span>
                   </div>
                 </div>
@@ -176,12 +176,12 @@ export default function ChatApp() {
             onKeyDown={handleKeyDown}
             placeholder="Ask a question about HDFC mutual funds..."
             disabled={isLoading}
-            className="w-full bg-slate-900/60 border border-slate-700/50 text-slate-200 rounded-full pl-6 pr-14 py-4 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all backdrop-blur-xl shadow-2xl placeholder:text-slate-500 disabled:opacity-50"
+            className="w-full bg-slate-900/60 border border-slate-700/50 text-slate-200 rounded-full pl-6 pr-14 py-4 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all backdrop-blur-xl shadow-2xl placeholder:text-slate-500 disabled:opacity-50"
           />
           <button
             onClick={() => sendMessage(input)}
             disabled={!input.trim() || isLoading}
-            className="absolute right-2 top-2 p-2.5 bg-indigo-600 hover:bg-indigo-500 disabled:bg-slate-800 text-white rounded-full transition-all duration-200 shadow-md flex items-center justify-center disabled:cursor-not-allowed group"
+            className="absolute right-2 top-2 p-2.5 bg-red-600 hover:bg-red-500 disabled:bg-slate-800 text-white rounded-full transition-all duration-200 shadow-md flex items-center justify-center disabled:cursor-not-allowed group"
           >
             <Send className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
