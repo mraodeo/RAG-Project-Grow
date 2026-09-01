@@ -2,7 +2,19 @@
 
 import { useState, useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import { Send, AlertTriangle, Building, MessageSquare, Loader2, Info } from "lucide-react";
+import { 
+  ArrowUp, 
+  AlertTriangle, 
+  Landmark, 
+  MessageSquare, 
+  Loader2, 
+  Settings, 
+  PanelLeft, 
+  Bot,
+  BarChart3,
+  Banknote,
+  ArrowRightLeft
+} from "lucide-react";
 
 type Message = {
   role: "user" | "assistant";
@@ -16,9 +28,22 @@ export default function ChatApp() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const examples = [
-    "What is the expense ratio of HDFC Large Cap Fund?",
-    "What is the exit load for HDFC ELSS Tax Saver Fund?",
-    "Minimum SIP amount for HDFC Small Cap Fund?",
+    {
+      icon: <BarChart3 className="w-5 h-5 text-slate-400" />,
+      text: "What is the expense ratio of HDFC Large Cap Fund?"
+    },
+    {
+      icon: <Landmark className="w-5 h-5 text-slate-400" />,
+      text: "What is the exit load for HDFC ELSS Tax Saver Fund?"
+    },
+    {
+      icon: <Banknote className="w-5 h-5 text-slate-400" />,
+      text: "Minimum SIP amount for HDFC Small Cap Fund?"
+    },
+    {
+      icon: <ArrowRightLeft className="w-5 h-5 text-slate-400" />,
+      text: "Compare HDFC Mid Cap vs Large Cap"
+    }
   ];
 
   const scrollToBottom = () => {
@@ -77,58 +102,70 @@ export default function ChatApp() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-red-950 text-slate-100 font-sans">
+    <div className="flex flex-col h-screen bg-[#0B1420] text-slate-100 font-sans">
       
       {/* Header */}
-      <header className="sticky top-0 z-10 p-4 border-b border-slate-800/50 bg-slate-900/40 backdrop-blur-md">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-red-500/20 rounded-xl border border-red-500/30">
-              <Building className="w-6 h-6 text-red-400" />
+      <header className="flex flex-col">
+        <div className="flex items-center justify-between p-4 bg-[#0B1420]">
+          <div className="flex items-center gap-4">
+            <button className="p-1 hover:bg-[#172132] rounded-md transition-colors text-slate-300">
+              <PanelLeft className="w-5 h-5" />
+            </button>
+            <div className="flex items-center gap-2">
+              <Landmark className="w-6 h-6 text-slate-200" />
+              <h1 className="text-xl font-bold text-white tracking-tight leading-tight">
+                Mutual Fund FAQ<br/>Assistant
+              </h1>
             </div>
-            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-rose-400">
-              HDFC Funds FAQ Assistance
-            </h1>
           </div>
-          
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-amber-500/10 border border-amber-500/20 rounded-full">
-            <AlertTriangle className="w-4 h-4 text-amber-500" />
-            <span className="text-xs font-medium text-amber-500/90 tracking-wide">
-              FACTS ONLY. NO INVESTMENT ADVICE.
-            </span>
-          </div>
+          <button className="p-2 hover:bg-[#172132] rounded-full transition-colors text-slate-300">
+            <Settings className="w-5 h-5" />
+          </button>
+        </div>
+        
+        {/* Warning Banner */}
+        <div className="bg-[#D1AD3B] py-2 px-4 flex items-center justify-center gap-2 w-full">
+          <AlertTriangle className="w-4 h-4 text-[#0B1420]" />
+          <AlertTriangle className="w-4 h-4 text-[#0B1420] text-opacity-70" />
+          <span className="text-sm font-semibold text-[#0B1420] tracking-wide">
+            Facts-only. No investment advice.
+          </span>
         </div>
       </header>
 
       {/* Main Chat Area */}
-      <main className="flex-1 overflow-y-auto p-4 md:p-6 custom-scrollbar">
-        <div className="max-w-4xl mx-auto space-y-6 pb-24">
+      <main className="flex-1 overflow-y-auto p-4 md:p-6 custom-scrollbar flex flex-col">
+        <div className="max-w-2xl mx-auto w-full flex-1 flex flex-col pb-6">
           
           {messages.length === 0 ? (
-            <div className="flex flex-col items-center justify-center min-h-[60vh] text-center animate-in fade-in duration-700 zoom-in-95">
-              <div className="w-20 h-20 bg-red-500/10 rounded-full flex items-center justify-center mb-6 border border-red-500/20 shadow-xl shadow-red-500/10">
-                <MessageSquare className="w-10 h-10 text-red-400" />
+            <div className="flex flex-col items-center justify-center flex-1 py-10 animate-in fade-in duration-500">
+              <div className="w-16 h-16 bg-[#1F2B3D] rounded-full flex items-center justify-center mb-6">
+                <Bot className="w-8 h-8 text-[#BDE7E0]" />
               </div>
-              <h2 className="text-3xl font-bold text-slate-200 mb-4">How can I help you today?</h2>
-              <p className="text-slate-400 max-w-md mb-10 leading-relaxed">
-                I can answer factual questions about HDFC mutual fund schemes, expense ratios, exit loads, and NAV details.
+              <h2 className="text-lg font-medium text-slate-200 mb-2">Hello! How can I help you today?</h2>
+              <p className="text-[#94A3B8] text-center max-w-sm mb-10 leading-relaxed text-sm">
+                Ask me facts about HDFC Mutual Funds, expense ratios, exit loads, or compare funds.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl">
+              <div className="w-full space-y-3">
                 {examples.map((example, idx) => (
                   <button
                     key={idx}
-                    onClick={() => sendMessage(example)}
-                    className="group flex flex-col items-start text-left p-4 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:bg-slate-800/60 hover:border-red-500/50 transition-all duration-300 backdrop-blur-sm"
+                    onClick={() => sendMessage(example.text)}
+                    className="w-full flex items-center gap-4 text-left p-4 rounded-xl bg-[#172132] border border-[#26334A] hover:bg-[#1F2B3D] transition-colors"
                   >
-                    <Info className="w-5 h-5 text-red-400 mb-3 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm text-slate-300 leading-snug font-medium">{example}</span>
+                    <div className="shrink-0">
+                      {example.icon}
+                    </div>
+                    <span className="text-sm text-slate-200 font-medium leading-snug">
+                      {example.text}
+                    </span>
                   </button>
                 ))}
               </div>
             </div>
           ) : (
-            <div className="space-y-6">
+            <div className="space-y-6 flex-1">
               {messages.map((msg, idx) => (
                 <div
                   key={idx}
@@ -137,10 +174,10 @@ export default function ChatApp() {
                   }`}
                 >
                   <div
-                    className={`max-w-[85%] md:max-w-[75%] rounded-3xl p-5 ${
+                    className={`max-w-[85%] rounded-2xl p-4 ${
                       msg.role === "user"
-                        ? "bg-red-600/90 text-white shadow-lg shadow-red-900/20 rounded-tr-sm"
-                        : "bg-slate-800/60 border border-slate-700/50 text-slate-200 backdrop-blur-md rounded-tl-sm prose prose-invert prose-p:leading-relaxed prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-700"
+                        ? "bg-[#172132] border border-[#26334A] text-slate-200"
+                        : "bg-transparent text-slate-200 prose prose-invert prose-p:leading-relaxed prose-pre:bg-[#172132] prose-pre:border prose-pre:border-[#26334A]"
                     }`}
                   >
                     {msg.role === "user" ? (
@@ -154,9 +191,9 @@ export default function ChatApp() {
               
               {isLoading && (
                 <div className="flex justify-start">
-                  <div className="bg-slate-800/60 border border-slate-700/50 backdrop-blur-md rounded-3xl rounded-tl-sm p-5 flex items-center gap-3">
-                    <Loader2 className="w-5 h-5 text-red-400 animate-spin" />
-                    <span className="text-sm font-medium text-slate-400 animate-pulse">Searching knowledge base...</span>
+                  <div className="bg-transparent text-slate-200 p-4 flex items-center gap-3">
+                    <Loader2 className="w-5 h-5 text-[#BDE7E0] animate-spin" />
+                    <span className="text-sm font-medium text-slate-400">Thinking...</span>
                   </div>
                 </div>
               )}
@@ -167,28 +204,30 @@ export default function ChatApp() {
       </main>
 
       {/* Input Area */}
-      <div className="fixed bottom-0 w-full p-4 bg-gradient-to-t from-slate-950 via-slate-950/90 to-transparent pt-10">
-        <div className="max-w-4xl mx-auto relative">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Ask a question about HDFC mutual funds..."
-            disabled={isLoading}
-            className="w-full bg-slate-900/60 border border-slate-700/50 text-slate-200 rounded-full pl-6 pr-14 py-4 focus:outline-none focus:ring-2 focus:ring-red-500/50 focus:border-red-500/50 transition-all backdrop-blur-xl shadow-2xl placeholder:text-slate-500 disabled:opacity-50"
-          />
-          <button
-            onClick={() => sendMessage(input)}
-            disabled={!input.trim() || isLoading}
-            className="absolute right-2 top-2 p-2.5 bg-red-600 hover:bg-red-500 disabled:bg-slate-800 text-white rounded-full transition-all duration-200 shadow-md flex items-center justify-center disabled:cursor-not-allowed group"
-          >
-            <Send className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </button>
+      <div className="w-full p-4 bg-[#0B1420]">
+        <div className="max-w-2xl mx-auto relative flex flex-col items-center">
+          <div className="relative w-full">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Ask about HDFC Mutual Funds..."
+              disabled={isLoading}
+              className="w-full bg-[#172132] border border-[#26334A] text-slate-200 rounded-xl pl-4 pr-14 py-4 focus:outline-none focus:border-[#475E82] transition-colors placeholder:text-[#64748B] disabled:opacity-50 text-sm"
+            />
+            <button
+              onClick={() => sendMessage(input)}
+              disabled={!input.trim() || isLoading}
+              className="absolute right-2 top-2 bottom-2 aspect-square bg-[#BDE7E0] hover:bg-[#A3D9D0] disabled:bg-[#1F2B3D] disabled:text-[#475E82] text-[#0B1420] rounded-lg transition-colors flex items-center justify-center disabled:cursor-not-allowed"
+            >
+              <ArrowUp className="w-5 h-5" />
+            </button>
+          </div>
+          <p className="text-center text-[11px] text-[#64748B] mt-3 max-w-sm">
+            AI may produce inaccurate information about financial products.
+          </p>
         </div>
-        <p className="text-center text-xs text-slate-500 mt-3 font-medium">
-          Answers are generated by AI and may not be perfect. Verify important data.
-        </p>
       </div>
     </div>
   );
