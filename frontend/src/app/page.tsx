@@ -163,6 +163,24 @@ export default function ChatApp() {
                   </button>
                 ))}
               </div>
+
+              {/* Supported Funds List */}
+              <div className="mt-8 pt-6 border-t border-[#26334A] w-full flex flex-col items-center animate-in fade-in duration-700 delay-300">
+                <h3 className="text-[11px] font-semibold text-[#64748B] uppercase tracking-widest mb-4">Supported Funds</h3>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {[
+                    { name: "HDFC Mid-Cap", style: "bg-blue-500/10 text-blue-400 border-blue-500/20" },
+                    { name: "HDFC Small-Cap", style: "bg-purple-500/10 text-purple-400 border-purple-500/20" },
+                    { name: "HDFC Large-Cap", style: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" },
+                    { name: "HDFC Gold ETF", style: "bg-amber-500/10 text-amber-400 border-amber-500/20" },
+                    { name: "HDFC ELSS Tax Saver", style: "bg-rose-500/10 text-rose-400 border-rose-500/20" }
+                  ].map((fund) => (
+                    <span key={fund.name} className={`px-3 py-1 border text-xs rounded-full shadow-sm ${fund.style}`}>
+                      {fund.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           ) : (
             <div className="space-y-6 flex-1">
