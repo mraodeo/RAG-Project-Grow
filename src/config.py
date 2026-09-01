@@ -24,7 +24,33 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM
 # ──────────────────────────────────────────────
 # ChromaDB Configuration
 # ──────────────────────────────────────────────
-CHROMA_PERSIST_DIR = os.getenv("CHROMA_PERSIST_DIR", "./vectorstore/chroma_db")
+import shutil
+_default_persist_dir = os.getenv("CHROMA_PERSIST_DIR", "./vectorstore/chroma_db")
+
+def _is_writable(path):
+    try:
+        if not os.path.exists(path):
+            os.makedirs(path, exist_ok=True)
+        test_file = os.path.join(path, '.write_test')
+        with open(test_file, 'w') as f:
+            f.write('test')
+        os.remove(test_file)
+        return True
+    except Exception:
+        return False
+
+_is_serverless = os.environ.get("VERCEL") == "1" or "RAILWAY_ENVIRONMENT" in os.environ
+if _is_serverless or not _is_writable(_default_persist_dir):
+    _tmp_dir = "/tmp/chroma_db"
+    if not os.path.exists(_tmp_dir):
+        if os.path.exists(_default_persist_dir):
+            shutil.copytree(_default_persist_dir, _tmp_dir)
+        else:
+            os.makedirs(_tmp_dir, exist_ok=True)
+    CHROMA_PERSIST_DIR = _tmp_dir
+else:
+    CHROMA_PERSIST_DIR = _default_persist_dir
+
 CHROMA_COLLECTION_NAME = os.getenv("CHROMA_COLLECTION_NAME", "mutual_fund_faq")
 
 # ──────────────────────────────────────────────
