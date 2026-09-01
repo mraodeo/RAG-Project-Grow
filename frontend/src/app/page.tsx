@@ -114,7 +114,7 @@ export default function ChatApp() {
             <div className="flex items-center gap-2">
               <Landmark className="w-6 h-6 text-slate-200" />
               <h1 className="text-xl font-bold text-white tracking-tight leading-tight">
-                Mutual Fund FAQ<br/>Assistant
+                HDFC Mutual Fund<br/>Assistant
               </h1>
             </div>
           </div>
