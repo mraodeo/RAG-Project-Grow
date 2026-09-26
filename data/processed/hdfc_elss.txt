@@ -4,7 +4,7 @@ Equity
 ELSS
 Very High Risk
 3Y annualised
--1.82%
++0.38%
 1D
 1M
 6M
@@ -12,7 +12,7 @@ Very High Risk
 3Y
 5Y
 All
-**NAV**: ₹1,441.84
+**NAV**: ₹1,447.38
 **Min. for SIP**: ₹500
 **Fund size (AUM)**: ₹15,991.78 Cr
 **Expense ratio**: 1.21%
@@ -334,10 +334,10 @@ Fund returns
 +12.8%
 +13.7%
 Category average (Equity ELSS)
-+11.1%
-+10.8%
-+13.4%
-+17.2%
++11.3%
++10.3%
++13.2%
++17.1%
 Rank (Equity ELSS)
 13
 17
@@ -425,7 +425,7 @@ HDFC Children's Fund Direct Plan
 HDFC Innovation Fund Direct Growth
 About HDFC ELSS Tax Saver Fund Direct Plan Growth
 HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Unde
-HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,86,237 Cr and the Latest NAV as of 24 Sep 2026 is ₹1,441.84.
+HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,86,237 Cr and the Latest NAV as of 25 Sep 2026 is ₹1,447.38.
 The HDFC ELSS Tax Saver Fund Direct Plan Growth is rated Very High risk. Minimum SIP Investment is set to ₹500. Minimum Lumpsum Investment is ₹500.
 ...Read more
 Investment Objective
@@ -489,11 +489,11 @@ How much expense ratio is charged by HDFC ELSS Tax Saver Fund Direct Plan Growth
 The term
 **Expense ratio**: used for HDFC ELSS Tax Saver Fund Direct Plan Growth or any other mutual fund is the annual
 charges one needs to pay to the Mutual Fund company for managing your investments in that fund.
-The Expense Ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth is 1.21% as of 25 Sep 2026...
+The Expense Ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth is 1.21% as of 26 Sep 2026...
 What is the AUM of HDFC ELSS Tax Saver Fund Direct Plan Growth?
 The AUM, short for
 Assets Under Management
-of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹15,991.78Cr as of 25 Sep 2026.
+of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹15,991.78Cr as of 26 Sep 2026.
 How to Redeem HDFC ELSS Tax Saver Fund Direct Plan Growth?
 If you want to sell your HDFC ELSS Tax Saver Fund Direct Plan Growth holdings, go to your holding on the app or
 web and simply click on it. You will get two options - redeem & invest more; click on redeem and enter your
@@ -506,7 +506,7 @@ Lumpsum
 investment of HDFC ELSS Tax Saver Fund Direct Plan Growth based on
 your investment objective and risk tolerance.
 What is the NAV of HDFC ELSS Tax Saver Fund Direct Plan Growth?
-The NAV of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹1,441.84 as of 24 Sep 2026.
+The NAV of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹1,447.38 as of 25 Sep 2026.
 What is the PE and PB ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth?
 The
 PE ratio
