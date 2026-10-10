@@ -4,7 +4,7 @@ Equity
 ELSS
 Very High Risk
 3Y annualised
--1.66%
++1.24%
 1D
 1M
 6M
@@ -12,9 +12,9 @@ Very High Risk
 3Y
 5Y
 All
-**NAV**: ₹1,392.88
+**NAV**: ₹1,410.20
 **Min. for SIP**: ₹500
-**Fund size (AUM)**: ₹15,991.78 Cr
+**Fund size (AUM)**: ₹14,948.73 Cr
 **Expense ratio**: 1.21%
 Rating
 Return calculator
@@ -43,7 +43,7 @@ Returns
 ₹60,000
 ₹1,17,824
 +96.37%
-Holdings (65)
+Holdings (64)
 Name
 Sector
 Instruments
@@ -51,91 +51,87 @@ Assets
 ICICI Bank Ltd
 Financial
 Equity
-9.32%
+9.06%
 HDFC Bank Ltd
 Financial
 Equity
-7.36%
+7.87%
 Axis Bank Ltd
 Financial
 Equity
-6.50%
-Maruti Suzuki India Ltd
-Consumer Discretionary
-Equity
-4.66%
-State Bank of India
-Financial
-Equity
-4.64%
+6.56%
 Kotak Mahindra Bank Ltd
 Financial
 Equity
-4.59%
+4.88%
+State Bank of India
+Financial
+Equity
+4.49%
 Bharti Airtel Ltd
 Technology
 Equity
-4.29%
+4.45%
+Maruti Suzuki India Ltd
+Consumer Discretionary
+Equity
+4.40%
 SBI Life Insurance Company Ltd
 Financial
 Equity
-3.25%
+3.21%
 HCL Technologies Ltd
 Technology
 Equity
-2.93%
+2.94%
 Hyundai Motor India Ltd.
 Consumer Discretionary
 Equity
-2.76%
+2.72%
 Reliance Industries Ltd
 Energy & Utilities
 Equity
-2.66%
+2.64%
 Zomato Ltd
 Technology
 Equity
-2.31%
+2.41%
 Bajaj Auto Ltd
 Consumer Discretionary
 Equity
-1.96%
+1.88%
 Tata Steel Ltd
 Materials
 Equity
-1.73%
+1.85%
 Britannia Industries Ltd
 Consumer Staples
 Equity
-1.72%
+1.69%
 Larsen & Toubro Ltd
 Industrials
 Equity
-1.60%
-Apollo Hospitals Enterprise Ltd
-Healthcare
-Equity
-1.53%
+1.59%
 JSW Steel Ltd
 Materials
 Equity
-1.51%
-Bosch Ltd
-Consumer Discretionary
-Equity
-1.41%
+1.55%
 Dr. Lal Pathlabs Ltd
 Healthcare
 Equity
-1.38%
-PB Fintech Ltd
-Financial
+1.52%
+Apollo Hospitals Enterprise Ltd
+Healthcare
 Equity
-1.35%
+1.50%
+Bosch Ltd
+Consumer Discretionary
+Equity
+1.42%
 Interglobe Aviation Ltd
 Industrials
 Equity
-1.34%
+1.37%
 Karur Vysya Bank Ltd
 Financial
 Equity
@@ -143,115 +139,123 @@ Equity
 Jubilant FoodWorks Ltd
 Consumer Discretionary
 Equity
-1.23%
-Metropolis Healthcare Ltd
-Healthcare
-Equity
-1.17%
+1.21%
 Alkem Laboratories Ltd
 Healthcare
 Equity
-1.17%
-Infosys Ltd
-Technology
-Equity
-1.17%
+1.21%
 Hindustan Aeronautics Ltd
 Industrials
 Equity
-1.13%
+1.17%
+Metropolis Healthcare Ltd
+Healthcare
+Equity
+1.16%
 Cipla Ltd
 Healthcare
+Equity
+1.11%
+ICICI Lombard General Insurance Company Ltd
+Financial
+Equity
+1.10%
+Power Grid Corporation of India Ltd
+Energy & Utilities
 Equity
 1.09%
 Star Health & Allied Insurance Co. Ltd
 Financial
 Equity
 1.07%
-Mphasis Ltd
-Technology
+ICICI Prudential Asset Management Company Ltd.
+Financial
 Equity
-1.06%
+1.05%
 United Spirits Ltd
 Consumer Staples
 Equity
-1.06%
-Power Grid Corporation of India Ltd
-Energy & Utilities
-Equity
 1.03%
-Repo
-Unspecified
-Repo
-1.03%
-ICICI Lombard General Insurance Company Ltd
-Financial
-Equity
-1.02%
 Tech Mahindra Ltd
 Technology
 Equity
 1.02%
-Lupin Ltd
-Healthcare
+Mphasis Ltd
+Technology
 Equity
-0.96%
-ICICI Prudential Asset Management Company Ltd.
-Financial
-Equity
-0.96%
-Eicher Motors Ltd
-Consumer Discretionary
-Equity
-0.90%
+1.01%
 JSW Energy Ltd
 Energy & Utilities
 Equity
-0.87%
-Havells India Ltd
+0.97%
+Infosys Ltd
+Technology
+Equity
+0.96%
+Lupin Ltd
+Healthcare
+Equity
+0.95%
+Eicher Motors Ltd
 Consumer Discretionary
 Equity
-0.83%
+0.86%
+PB Fintech Ltd
+Financial
+Equity
+0.84%
 Chalet Hotels Ltd
 Consumer Discretionary
 Equity
 0.81%
+IIFL Wealth Management Ltd
+Financial
+Equity
+0.79%
 Hindustan Unilever Ltd
 Consumer Staples
 Equity
-0.74%
+0.75%
 Godrej Consumer Products Ltd
 Consumer Staples
 Equity
 0.74%
-IIFL Wealth Management Ltd
-Financial
+Havells India Ltd
+Consumer Discretionary
 Equity
 0.73%
 Mahindra & Mahindra Ltd
 Consumer Discretionary
 Equity
-0.72%
-Birla Corporation Ltd
-Materials
+0.69%
+Cummins India Ltd
+Industrials
 Equity
-0.55%
+0.68%
 Westlife Development Ltd
 Consumer Discretionary
 Equity
-0.53%
-Life Insurance Corporation of India
-Financial
+0.59%
+Birla Corporation Ltd
+Materials
 Equity
-0.52%
+0.56%
 Bharat Electronics Ltd
 Industrials
 Equity
+0.56%
+Life Insurance Corporation of India
+Financial
+Equity
+0.53%
+Repo
+Unspecified
+Repo
 0.47%
 The Ramco Cements Ltd
 Materials
 Equity
-0.44%
+0.45%
 Cyient Ltd
 Technology
 Equity
@@ -259,55 +263,47 @@ Equity
 Suven Pharmaceuticals Ltd
 Healthcare
 Equity
-0.41%
-TeamLease Services Ltd
-Industrials
-Equity
-0.33%
+0.42%
 GOVERNMENT OF INDIA 31719 GOI 20JU27 7.38 FV RS 100
 Entities
 GOI Securities
-0.32%
+0.34%
+TeamLease Services Ltd
+Industrials
+Equity
+0.31%
 Popular Vehicles And Services Ltd.
 Consumer Discretionary
 Equity
-0.32%
-Anthem Biosciences Ltd.
-Healthcare
-Equity
-0.28%
+0.31%
 Rubicon Research Ltd.
 Healthcare
 Equity
-0.25%
+0.24%
 Tata Motors Ltd
 Industrials
 Equity
-0.18%
-Bajaj Electricals Ltd
-Consumer Discretionary
-Equity
-0.13%
+0.17%
 JK Lakshmi Cement Ltd
 Materials
 Equity
 0.13%
+Bajaj Electricals Ltd
+Consumer Discretionary
+Equity
+0.12%
+Anthem Biosciences Ltd.
+Healthcare
+Equity
+0.07%
 SBI Funds Management Ltd
 Financial
 Equity
-0.06%
-Medi Assist Healthcare Services Ltd.
-Industrials
-Equity
-0.04%
-Escorts Kubota Ltd
-Industrials
-Equity
-0.03%
+0.05%
 Net Payables
 Unspecified
 Net Payables
--0.04%
+-0.06%
 See All
 Minimum investments
 Min. for 1st investment
@@ -334,10 +330,10 @@ Fund returns
 +12.4%
 +13.4%
 Category average (Equity ELSS)
-+10.2%
-+10.0%
-+13.0%
-+16.9%
++9.8%
++9.3%
++12.7%
++16.8%
 Rank (Equity ELSS)
 11
 17
@@ -425,7 +421,7 @@ HDFC Children's Fund Direct Plan
 HDFC Innovation Fund Direct Growth
 About HDFC ELSS Tax Saver Fund Direct Plan Growth
 HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Unde
-HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,86,237 Cr and the Latest NAV as of 08 Oct 2026 is ₹1,392.88.
+HDFC ELSS Tax Saver Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Amar Kalkundrikar is the Current Fund Manager of HDFC ELSS Tax Saver Fund Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,86,237 Cr and the Latest NAV as of 09 Oct 2026 is ₹1,410.20.
 The HDFC ELSS Tax Saver Fund Direct Plan Growth is rated Very High risk. Minimum SIP Investment is set to ₹500. Minimum Lumpsum Investment is ₹500.
 ...Read more
 Investment Objective
@@ -460,6 +456,9 @@ Website
 www.camsonline.com
 Address
 7th Floor, Tower II, Rayala Towers, 158, Anna Salai,
+Other plans in the same fund
+Name
+HDFC ELSS Tax Saver Fund Direct Plan IDCW
 Recently viewed
 HDFC Large Cap Fund Direct Growth
 +7.16%
@@ -489,11 +488,11 @@ How much expense ratio is charged by HDFC ELSS Tax Saver Fund Direct Plan Growth
 The term
 **Expense ratio**: used for HDFC ELSS Tax Saver Fund Direct Plan Growth or any other mutual fund is the annual
 charges one needs to pay to the Mutual Fund company for managing your investments in that fund.
-The Expense Ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth is 1.21% as of 09 Oct 2026...
+The Expense Ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth is 1.21% as of 10 Oct 2026...
 What is the AUM of HDFC ELSS Tax Saver Fund Direct Plan Growth?
 The AUM, short for
 Assets Under Management
-of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹15,991.78Cr as of 09 Oct 2026.
+of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹14,948.73Cr as of 10 Oct 2026.
 How to Redeem HDFC ELSS Tax Saver Fund Direct Plan Growth?
 If you want to sell your HDFC ELSS Tax Saver Fund Direct Plan Growth holdings, go to your holding on the app or
 web and simply click on it. You will get two options - redeem & invest more; click on redeem and enter your
@@ -506,7 +505,7 @@ Lumpsum
 investment of HDFC ELSS Tax Saver Fund Direct Plan Growth based on
 your investment objective and risk tolerance.
 What is the NAV of HDFC ELSS Tax Saver Fund Direct Plan Growth?
-The NAV of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹1,392.88 as of 08 Oct 2026.
+The NAV of HDFC ELSS Tax Saver Fund Direct Plan Growth is ₹1,410.20 as of 09 Oct 2026.
 What is the PE and PB ratio of HDFC ELSS Tax Saver Fund Direct Plan Growth?
 The
 PE ratio
