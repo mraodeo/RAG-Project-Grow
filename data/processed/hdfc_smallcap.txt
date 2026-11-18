@@ -3,7 +3,7 @@ Equity
 Small Cap
 Very High Risk
 3Y annualised
--0.44%
+0.00%
 1D
 1M
 6M
@@ -32,16 +32,16 @@ Returns
 +1.17%
 3 years
 ₹3,600
-₹3,754
-+4.28%
+₹3,753
++4.25%
 5 years
 ₹6,000
-₹7,946
-+32.43%
+₹7,944
++32.40%
 10 years
 ₹12,000
-₹29,215
-+143.46%
+₹29,199
++143.32%
 Holdings (90)
 Name
 Sector
@@ -429,7 +429,7 @@ Name
 All
 Fund returns
 +8.8%
-+13.4%
++13.5%
 +18.0%
 +17.9%
 Category average (Equity Small Cap)
@@ -438,7 +438,7 @@ Category average (Equity Small Cap)
 +18.1%
 +20.1%
 Rank (Equity Small Cap)
-35
+36
 15
 --
 Understand terms
@@ -465,24 +465,24 @@ Name
 3Y
 Fund Size(Cr)
 Bandhan Small Cap Fund Direct Growth
-+8.32%
-+21.54%
++7.85%
++21.61%
 35,203.84
-ITI Small Cap Fund Direct Growth
-+18.06%
-+20.73%
-3,597.03
 Invesco India Small Cap Fund Direct Growth
-+18.66%
-+20.58%
++18.10%
++20.62%
 16,319.58
+ITI Small Cap Fund Direct Growth
++17.01%
++20.44%
+3,597.03
 Sundaram Small Cap Fund Direct Growth
-+8.79%
-+13.61%
++8.21%
++13.62%
 3,862.20
 Nippon India Small Cap Fund Direct Growth
-+6.42%
-+13.07%
++5.49%
++12.83%
 76,902.83
 Compare
 Fund management
@@ -556,7 +556,7 @@ HDFC Retirement Fund Hybrid Debt Plan Direct Growth
 HDFC Children's Fund Direct Plan
 About HDFC Small Cap Fund Direct Growth
 HDFC Small Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Dhruv Muchhal is the Current Fund Manager of HDFC Small Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,
-HDFC Small Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Dhruv Muchhal is the Current Fund Manager of HDFC Small Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,33,671 Cr and the Latest NAV as of 16 Nov 2026 is ₹155.89.
+HDFC Small Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by HDFC Mutual Fund. This scheme was made available to investors on 09 Dec 1999. Dhruv Muchhal is the Current Fund Manager of HDFC Small Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹9,33,671 Cr and the Latest NAV as of 17 Nov 2026 is ₹155.89.
 The HDFC Small Cap Fund Direct Growth is rated Very High risk. Minimum SIP Investment is set to ₹100. Minimum Lumpsum Investment is ₹100. Exit load of 1% if redeemed within 1 year
 ...Read more
 Investment Objective
@@ -593,7 +593,7 @@ Address
 7th Floor, Tower II, Rayala Towers, 158, Anna Salai,
 Recently viewed
 HDFC Mid Cap Fund Direct Growth
-+15.52%
++15.50%
 3Y
 FAQs
 How to Invest in HDFC Small Cap Fund Direct Growth?
@@ -611,11 +611,11 @@ How much expense ratio is charged by HDFC Small Cap Fund Direct Growth?
 The term
 **Expense ratio**: used for HDFC Small Cap Fund Direct Growth or any other mutual fund is the annual
 charges one needs to pay to the Mutual Fund company for managing your investments in that fund.
-The Expense Ratio of HDFC Small Cap Fund Direct Growth is 0.79% as of 17 Nov 2026...
+The Expense Ratio of HDFC Small Cap Fund Direct Growth is 0.79% as of 18 Nov 2026...
 What is the AUM of HDFC Small Cap Fund Direct Growth?
 The AUM, short for
 Assets Under Management
-of HDFC Small Cap Fund Direct Growth is ₹38,960.36Cr as of 17 Nov 2026.
+of HDFC Small Cap Fund Direct Growth is ₹38,960.36Cr as of 18 Nov 2026.
 How to Redeem HDFC Small Cap Fund Direct Growth?
 If you want to sell your HDFC Small Cap Fund Direct Growth holdings, go to your holding on the app or
 web and simply click on it. You will get two options - redeem & invest more; click on redeem and enter your
@@ -628,7 +628,7 @@ Lumpsum
 investment of HDFC Small Cap Fund Direct Growth based on
 your investment objective and risk tolerance.
 What is the NAV of HDFC Small Cap Fund Direct Growth?
-The NAV of HDFC Small Cap Fund Direct Growth is ₹155.89 as of 16 Nov 2026.
+The NAV of HDFC Small Cap Fund Direct Growth is ₹155.89 as of 17 Nov 2026.
 What is the PE and PB ratio of HDFC Small Cap Fund Direct Growth?
 The
 PE ratio
