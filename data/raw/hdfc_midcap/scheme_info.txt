@@ -518,14 +518,14 @@ Fund returns
 +18.1%
 +19.8%
 Category average (Equity Mid Cap)
++14.4%
 +14.9%
-+14.8%
-+17.4%
++17.3%
 +18.4%
 Rank (Equity Mid Cap)
-13
+14
 4
-6
+7
 --
 Understand terms
 Expense ratio
@@ -565,8 +565,8 @@ WhiteOak Capital Mid Cap Fund Direct Growth
 +19.86%
 7,785.51
 Edelweiss Mid Cap Direct Plan Growth
-+4.37%
-+18.69%
++4.66%
++18.39%
 18,724.52
 Nippon India Growth Mid Cap Fund Direct Growth
 +5.00%
@@ -680,9 +680,6 @@ Website
 www.camsonline.com
 Address
 7th Floor, Tower II, Rayala Towers, 158, Anna Salai,
-Other plans in the same fund
-Name
-HDFC Mid Cap Fund Direct IDCW
 FAQs
 How to Invest in HDFC Mid Cap Fund Direct Growth?
 You can easily invest in HDFC Mid Cap Fund Direct Growth in a hassle-free manner on Groww. The
@@ -700,11 +697,11 @@ The term
 Expense Ratio
 used for HDFC Mid Cap Fund Direct Growth or any other mutual fund is the annual
 charges one needs to pay to the Mutual Fund company for managing your investments in that fund.
-The Expense Ratio of HDFC Mid Cap Fund Direct Growth is 0.73% as of 24 Nov 2026...
+The Expense Ratio of HDFC Mid Cap Fund Direct Growth is 0.73% as of 25 Nov 2026...
 What is the AUM of HDFC Mid Cap Fund Direct Growth?
 The AUM, short for
 Assets Under Management
-of HDFC Mid Cap Fund Direct Growth is ₹1,00,687.07Cr as of 24 Nov 2026.
+of HDFC Mid Cap Fund Direct Growth is ₹1,00,687.07Cr as of 25 Nov 2026.
 How to Redeem HDFC Mid Cap Fund Direct Growth?
 If you want to sell your HDFC Mid Cap Fund Direct Growth holdings, go to your holding on the app or
 web and simply click on it. You will get two options - redeem & invest more; click on redeem and enter your
@@ -771,7 +768,7 @@ Bonds
 Credit
 US Stocks
 © 2016-2026 Groww. All rights reserved.
-Version: 8.2.2
+Version: 8.2.4
 Share Market
 Indices
 F&O
